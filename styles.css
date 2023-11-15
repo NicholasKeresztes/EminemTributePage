@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* NAVIGATION */
@@ -21,6 +23,7 @@ nav {
 .personal__logo {
     font-size: 24px;
     color: black;
+    position: sticky;
 
 }
 
@@ -40,6 +43,10 @@ nav {
     background-color: black;
     color: white;
     border-radius: 6px;
+}
+
+.nav__link:active {
+    color: rgb(199, 5, 5);
 }
 
 .elink {
@@ -79,6 +86,8 @@ nav {
     font-size: 18px;
 }
 
+/* MAIN */
+
 .container {
     display: flex;
     padding: 12px 0;
@@ -87,14 +96,48 @@ nav {
     flex-wrap: wrap;
 }
 
-.about-eminem {
-    max-width: 150px;
+.about__container {
+    max-width: 500px;
     display: flex;
-
+    flex-direction: column;
 }
 
-.about-header {
+.about-eminem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eminem__container {
+   display:flex;
+   flex-wrap: nowrap;
+}
+
+.header {
     color: black;
     font-size: 24px;
     padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.desc {
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.timeline-eminem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline__container {
+    max-width: 500px;
+    flex-direction: column;
+    display: flex;
 }
